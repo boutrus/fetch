@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapper Info</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Rapper Information</h1>
+    <ul>
+        <% for (let i = 0; i < info.length; i++) { %>
+            <li><strong>Stage Name:</strong> <%= info[i].stageName %></li>
+            <li><strong>Birth Name:</strong> <%= info[i].birthName %></li>
+            <li><strong>Likes:</strong> <%= info[i].likes %></li>
+            <hr>
+        <% } %>
+    </ul>
+    <script src="js/main.js"></script>
+</body>
+</html>
